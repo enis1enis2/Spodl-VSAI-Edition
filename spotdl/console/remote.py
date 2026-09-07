@@ -64,11 +64,18 @@ def remote(args: argparse.Namespace):
     ### Arguments
     - args: The parsed arguments.
     """
-    spotify_settings, downloader_settings, web_settings = create_settings(args)
+    from argparse import Namespace
+
+    from spotdl.types.options import DownloaderOptions
+    from spotdl.utils.config import DOWNLOADER_OPTIONS, create_settings_type
+
+    downloader_settings: DownloaderOptions = create_settings_type(
+        Namespace(config=False), {}, DOWNLOADER_OPTIONS
+    )
 
     if args.remote_mode == "server":
-        host = args.remote_host or web_settings.get("host", "0.0.0.0")
-        port = args.remote_port or web_settings.get("port", 8801)
+        host = args.remote_host or "0.0.0.0"
+        port = args.remote_port or 8801
         _run_server(host, port, downloader_settings)
 
     elif args.remote_mode == "client":
