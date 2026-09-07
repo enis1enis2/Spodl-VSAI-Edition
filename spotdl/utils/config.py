@@ -368,6 +368,11 @@ DOWNLOADER_OPTIONS: DownloaderOptions = {
     "create_skip_file": False,
     "respect_skip_file": False,
     "sync_remove_lrc": False,
+    "universal_search": False,
+    "universal_dedup": True,
+    "universal_auto_download": False,
+    "universal_max_workers": 5,
+    "universal_acoustic_fingerprint": False,
 }
 
 WEB_OPTIONS: WebOptions = {

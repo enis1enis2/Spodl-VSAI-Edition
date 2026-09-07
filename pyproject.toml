@@ -50,6 +50,7 @@ dependencies = [
     "datastar-py>=0.6.3",
     "jinja2>=3.1.5",
     "python-multipart>=0.0.20",
+    "pyacoustid>=1.3.0,<2",
 ]
 
 [project.urls]

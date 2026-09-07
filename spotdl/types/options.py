@@ -90,6 +90,11 @@ class DownloaderOptions(TypedDict):
     create_skip_file: Optional[bool]
     respect_skip_file: Optional[bool]
     sync_remove_lrc: Optional[bool]
+    universal_search: Optional[bool]
+    universal_dedup: Optional[bool]
+    universal_auto_download: Optional[bool]
+    universal_max_workers: Optional[int]
+    universal_acoustic_fingerprint: Optional[bool]
 
 
 class WebOptions(TypedDict):
@@ -184,6 +189,11 @@ class DownloaderOptionalOptions(TypedDict, total=False):
     create_skip_file: Optional[bool]
     respect_skip_file: Optional[bool]
     sync_remove_lrc: Optional[bool]
+    universal_search: Optional[bool]
+    universal_dedup: Optional[bool]
+    universal_auto_download: Optional[bool]
+    universal_max_workers: Optional[int]
+    universal_acoustic_fingerprint: Optional[bool]
 
 
 class WebOptionalOptions(TypedDict, total=False):

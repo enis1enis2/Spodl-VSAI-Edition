@@ -16,7 +16,7 @@ from spotdl.utils.logging import NAME_TO_LEVEL
 
 __all__ = ["OPERATIONS", "SmartFormatter", "parse_arguments"]
 
-OPERATIONS = ["download", "save", "web", "sync", "meta", "url"]
+OPERATIONS = ["download", "save", "web", "sync", "meta", "url", "universal"]
 
 
 class SmartFormatter(argparse.HelpFormatter):
@@ -60,7 +60,8 @@ def parse_main_options(parser: _ArgumentGroup):
             "web: Starts a web interface to simplify the download process.\n"
             "sync: Removes songs that are no longer present, downloads new ones\n"
             "meta: Update your audio files with metadata\n"
-            "url: Get the download URL for songs\n\n"
+            "url: Get the download URL for songs\n"
+            "universal: Search across all supported platforms and download\n\n"
         ),
     )
 
@@ -637,6 +638,38 @@ def parse_output_options(parser: _ArgumentGroup):
         help="Remove lrc files when using sync operation when downloading songs",
     )
 
+    # Universal search options
+    parser.add_argument(
+        "--universal-search",
+        action="store_const",
+        const=True,
+        help="Search across all supported platforms (YouTube, SoundCloud, etc.)",
+    )
+    parser.add_argument(
+        "--universal-dedup",
+        action="store_const",
+        const=True,
+        help="Enable duplicate detection across sources",
+    )
+    parser.add_argument(
+        "--universal-auto-download",
+        action="store_const",
+        const=True,
+        help="Automatically download the best match",
+    )
+    parser.add_argument(
+        "--universal-max-workers",
+        type=int,
+        default=5,
+        help="Maximum parallel workers for universal search",
+    )
+    parser.add_argument(
+        "--universal-acoustic-fingerprint",
+        action="store_const",
+        const=True,
+        help="Use acoustic fingerprinting for duplicate detection",
+    )
+
 
 def parse_web_options(parser: _ArgumentGroup):
     """
@@ -858,6 +891,35 @@ def parse_arguments() -> Namespace:
     ### Returns
     - A Namespace object containing the parsed arguments.
     """
+
+    if len(sys.argv) > 1 and sys.argv[1] == "remote":
+        remote_parser = ArgumentParser(
+            prog="spotdl remote",
+            description="Run remote client or server for distributed downloads",
+        )
+        remote_parser.add_argument(
+            "remote_mode",
+            choices=["server", "client"],
+            help="Whether to run as server or client",
+        )
+        remote_parser.add_argument(
+            "--remote-host",
+            help="Host to bind the server to (server mode only)",
+        )
+        remote_parser.add_argument(
+            "--remote-port",
+            type=int,
+            help="Port to listen on (server mode only)",
+        )
+        remote_parser.add_argument(
+            "--remote-server",
+            help="Server URL to connect to (client mode only)",
+        )
+        remote_parser.add_argument(
+            "--remote-download-dir",
+            help="Directory to save downloaded files (client mode only)",
+        )
+        return remote_parser.parse_args()
 
     # Create parser
     parser = create_parser()

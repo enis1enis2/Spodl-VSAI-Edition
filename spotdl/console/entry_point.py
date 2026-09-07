@@ -13,8 +13,10 @@ from spotdl.console.download import download
 from spotdl.console.meta import meta
 from spotdl.console.save import save
 from spotdl.console.sync import sync
+from spotdl.console.universal import universal
 from spotdl.console.url import url
 from spotdl.console.web import web
+from spotdl.console.remote import add_remote_subparser
 from spotdl.download.downloader import Downloader, DownloaderError
 from spotdl.utils.arguments import parse_arguments
 from spotdl.utils.config import create_settings
@@ -32,6 +34,7 @@ OPERATIONS = {
     "save": save,
     "meta": meta,
     "url": url,
+    "universal": universal,
 }
 
 logger = logging.getLogger(__name__)
@@ -76,6 +79,11 @@ def entry_point():
 
     # Parse the arguments
     arguments = parse_arguments()
+
+    # Handle remote subcommand
+    if hasattr(arguments, 'func') and arguments.func is not None:
+        arguments.func(arguments)
+        return None
 
     # Create settings dicts
     spotify_settings, downloader_settings, web_settings = create_settings(arguments)
@@ -157,10 +165,17 @@ def entry_point():
     try:
         # Pick the operation to perform
         # based on the name and run it!
-        OPERATIONS[arguments.operation](
-            query=arguments.query,
-            downloader=downloader,
-        )
+        if arguments.operation == "universal":
+            OPERATIONS[arguments.operation](
+                query=arguments.query,
+                downloader=downloader,
+                downloader_settings=downloader_settings,
+            )
+        else:
+            OPERATIONS[arguments.operation](
+                query=arguments.query,
+                downloader=downloader,
+            )
     except Exception as exc:
         if downloader_settings["save_errors"]:
             with open(
