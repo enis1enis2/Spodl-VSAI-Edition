@@ -1,0 +1,74 @@
+Could not get client token
+2026-09-07-12-22-58
+https://open.spotify.com/track/3Hde8QTMqLkIZ98JR4Jj6Z - LookupError: No results found for song: Anıl Piyancı - Açık Ara Bul Kon
+https://open.spotify.com/track/4LpcvGwDLg6UKPrGdJTVLu - LookupError: No results found for song: HUNTR/X - What It Sounds Like - Instrumental
+https://open.spotify.com/track/3Hde8QTMqLkIZ98JR4Jj6Z - LookupError: No results found for song: Anıl Piyancı - Açık Ara Bul Kon
+https://open.spotify.com/track/3JTphuwOWcI28J2vS4gMmI - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=1Q4sIvr8Uec
+https://open.spotify.com/track/6qLGmqg7yfTVotHvxVClZ8 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=Tzi_nl0XKgk
+https://open.spotify.com/track/7ik7FdFpCozYBl8ZgDFSl3 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=lX29b4qTb2w
+https://open.spotify.com/track/2hYeSLh8NjBGBaNLQBCuaN - LookupError: No results found for song: Saja Boys - Your Idol - Instrumental
+https://open.spotify.com/track/5P3o95Jf0YBQRQ4j2XPpfC - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=gQlMMD8auMs
+https://open.spotify.com/track/5DZdCgnX9xAj59X6X7cQBs - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=2qJPDmUhPIM
+https://open.spotify.com/track/45lXSvtDt6uKiGZIXB4LLF - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=4R7vRFGJr3k
+https://open.spotify.com/track/18JIIA7skQT8h7a13nMHfh - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=VPCe2zhLEek
+https://open.spotify.com/track/1JbphWawhvVxDwLQEIjsxD - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=2Pt2p7eMFtg
+https://open.spotify.com/track/2UsEahJ2lpbBjguCfLHPP4 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=KPaAjMLfSXk
+https://open.spotify.com/track/09XOVDSIbBxBf6Kr1vGnHf - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=0dTOTXHsBc0
+https://open.spotify.com/track/68fx1drvQDkcQvxHOwy7s7 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=SSlv39wv3bQ
+https://open.spotify.com/track/2PnlsTsOTLE5jnBnNe2K0A - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=SRXH9AbT280
+https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=eVTXPUF4Oz4
+https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=kXYiU_JCYtU
+https://open.spotify.com/track/6FGbxOWr2PhOHd6N06nafP - LookupError: No results found for song: manifest - Manifest
+https://open.spotify.com/track/6CLaDfvIMeLCMoXmy4rmCS - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=D1hDBMFWkP8
+https://open.spotify.com/track/4MEYUby6zD6k6nRz32DS0A - LookupError: No results found for song: HUNTR/X - How It’s Done - Instrumental
+https://open.spotify.com/track/3RXUgPNIbUgFxsDWuBQEt6 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=o8OjEIITii4
+https://open.spotify.com/track/67AMcEV9GTOlxs1NAvUDiU - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=yxZJjYNHTsQ
+https://open.spotify.com/track/1JvUmKSl9Mg6mQnmbjLYyz - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=guRuxh0e5vE
+https://open.spotify.com/track/7062Mgki9bYCbiNnrdgESF - LookupError: No results found for song: Rumi - Free - Instrumental
+https://open.spotify.com/track/1rKQjUhF9zFJmuUotr3VkV - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=MpT036R76Xo
+https://open.spotify.com/track/1wC7MYycfqqyMqPBINWCaI - LookupError: No results found for song: HUNTR/X - Golden - David Guetta REM/X (Extended)
+https://open.spotify.com/track/4SFknyjLcyTLJFPKD2m96o - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=ioNng23DkIM
+https://open.spotify.com/track/5GK7eDDTVz7CTge1wJrDQW - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=2S24-y0Ij3Y
+https://open.spotify.com/track/5X3T8jHNIJSXviiDmiBdz0 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=M-pYPLsBp6k
+https://open.spotify.com/track/0vEYBkV3DplIMNE3TSDg7Z - LookupError: No results found for song: manifest - Outro
+https://open.spotify.com/track/3loy88Lp5qoTHhL8GhRfVZ - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=z3wAjJXbYzA
+https://open.spotify.com/track/5DxDLsW6PsLz5gkwC7Mk5S - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=fjOeJssZX_Q
+Error occurred while reinitializing song: Could not get artist by ID
+https://open.spotify.com/track/2cUZpjUvGWtVrMMEUrx1YP - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=FlhZsk9ZU3E
+https://open.spotify.com/track/1CPZ5BxNNd0n0nF4Orb9JS - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=oOP1WuHXOyw
+https://open.spotify.com/track/2mW1SMo4VbI2MFCTKOBZ6W - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=jVQNc2XfCPk
+https://open.spotify.com/track/6tCd8bPvYnceDG7W9M1RMk - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=POe9SOEKotk
+https://open.spotify.com/track/1eZfubCc0Qf0VgDioyks9j - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=wqqmJgYwcCA
+https://open.spotify.com/track/09XOVDSIbBxBf6Kr1vGnHf - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=0dTOTXHsBc0
+https://open.spotify.com/track/2UsEahJ2lpbBjguCfLHPP4 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=KPaAjMLfSXk
+https://open.spotify.com/track/4HbJLNbqtZI5AHKg12VtNr - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=GH6MB7YH-Bg
+https://open.spotify.com/track/7ik7FdFpCozYBl8ZgDFSl3 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=lX29b4qTb2w
+https://open.spotify.com/track/3Hde8QTMqLkIZ98JR4Jj6Z - LookupError: No results found for song: Anıl Piyancı - Açık Ara Bul Kon
+https://open.spotify.com/track/79ZRH3WrIf2ZdLErSF15z2 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=alghl8sUZ98
+https://open.spotify.com/track/67AMcEV9GTOlxs1NAvUDiU - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=yxZJjYNHTsQ
+https://open.spotify.com/track/4JqP7JwWNG8I7xY40E6IWh - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=lEwslGCDsSI
+https://open.spotify.com/track/1JvUmKSl9Mg6mQnmbjLYyz - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=guRuxh0e5vE
+https://open.spotify.com/track/4aZXSzUKmrtwOzNFNP8dGI - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=qyyx5Epd4t4
+https://open.spotify.com/track/40Fr7DB1j6RB2DqygQI4LI - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=UiyxPIvB89Q
+https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=2ydCvkxuNm4
+https://open.spotify.com/track/7qrXYKwZWOMdnrxN0HKm5x - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=NDPWCGO7s6I
+https://open.spotify.com/track/4j2rg6pHWZJVpJy1AwRpdl - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=zuP6l1oA3Ro
+https://open.spotify.com/track/7JOZ88jJbmx9TIzpPJBCqi - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=PrUClJDGIdE
+https://open.spotify.com/track/1LJ8ODaoio5lJMgtXzALMw - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=09qkLYCyY5Y
+https://open.spotify.com/track/4yHSp3OunMQmvSbIgy2Hhm - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=WcDQ9sZKq2Y
+https://open.spotify.com/track/0f5wEn5loiPLw2ItV8Qxoi - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=yQ9lXHfv9Yg
+https://open.spotify.com/track/2tn5ROyAtMeBg4NCQMTTnD - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=yQ9lXHfv9Yg
+https://open.spotify.com/track/0rFE7maWOD4JFeG1wukeiB - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=eyjgmF0EmpM
+https://open.spotify.com/track/4eBE6hpwm7aJxIY4iwgwU8 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=vJ0USkE2eRc
+https://open.spotify.com/track/3JTphuwOWcI28J2vS4gMmI - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=_NoTqg152B0
+https://open.spotify.com/track/5UV2oqgMXvlkOvvtK3aT7f - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=7RW8n4iXZbA
+https://open.spotify.com/track/1f9X5YDmXDxyIwhzB06JJd - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=xEjOU731SFc
+https://open.spotify.com/track/1bV9ZIvvlsv68FFX5pBNk7 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=xM4Msflqxi0
+https://open.spotify.com/track/2mW1SMo4VbI2MFCTKOBZ6W - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=jVQNc2XfCPk
+https://open.spotify.com/track/6r027Faonff84hxFMjMbIH - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=XbGs_qK2PQA
+https://open.spotify.com/track/77pFHFviVrb2iOP2gMFDNf - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=9a4hBUcw3eE
+https://open.spotify.com/track/3Ofmpyhv5UAQ70mENzB277 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=YRNyamyBOIQ
+https://open.spotify.com/track/0JtIWgsblOvJfpoyhGkFuS - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=S9bCLPwzSC0
+https://open.spotify.com/track/7qzbmytuhECbiwefx1619X - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=5tG-Gm4V2X4
+https://open.spotify.com/track/2eTV7FlMe4Yq8I4J8vEAc2 - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=dnjTOvO3Yzc
+https://open.spotify.com/track/24CSPGkF9QB1zW07dgtZhr - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=eNRirw_HGDQ

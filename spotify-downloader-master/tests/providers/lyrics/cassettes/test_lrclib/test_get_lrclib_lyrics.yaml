@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://lrclib.net/api/search?artist_name=Berri+Txarrak&track_name=Zertarako+amestu
+  response:
+    body:
+      string: |
+        [{"id":15125838,"name":"Zertarako Amestu","trackName":"Zertarako Amestu","artistName":"Berri Txarrak","albumName":"Denak Ez Du Balio-Singles 1997-2007","duration":93.309388,"instrumental":false,"plainLyrics":"Eta lo bagaude, zertarako amestu?\nTa zertan esnatu hemen ez bazaude?\nEta lo bagaude, zertarako amets egin\netorriko diren egun libreekin?\n\nZertan amets egin?","syncedLyrics":"[00:29.76] Eta lo bagaude, zertarako amestu?\n[00:33.36] Ta zertan esnatu hemen ez bazaude?\n[00:40.69] Eta lo bagaude, zertarako amets egin\n[00:47.82] etorriko diren egun libreekin?\n[00:57.78] Zertan amets egin?\n[01:28.48] ","lyricsfile":"version: '1.0'\nmetadata:\n  title: Zertarako Amestu\n  artist: Berri Txarrak\n  album: Denak Ez Du Balio-Singles 1997-2007\n  duration_ms: 93309\n  instrumental: false\nlines:\n- text: Eta lo bagaude, zertarako amestu?\n  start_ms: 29760\n  end_ms: 33360\n- text: Ta zertan esnatu hemen ez bazaude?\n  start_ms: 33360\n  end_ms: 40690\n- text: Eta lo bagaude, zertarako amets egin\n  start_ms: 40690\n  end_ms: 47820\n- text: etorriko diren egun libreekin?\n  start_ms: 47820\n  end_ms: 57780\n- text: Zertan amets egin?\n  start_ms: 57780\n  end_ms: 88480\n- text: ''\n  start_ms: 88480\nplain: |-\n  Eta lo bagaude, zertarako amestu?\n  Ta zertan esnatu hemen ez bazaude?\n  Eta lo bagaude, zertarako amets egin\n  etorriko diren egun libreekin?\n\n  Zertan amets egin?\n"}]
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - cloudflare
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://lrclib.net/api/get/15125838
+  response:
+    body:
+      string: |
+        {"id":15125838,"name":"Zertarako Amestu","trackName":"Zertarako Amestu","artistName":"Berri Txarrak","albumName":"Denak Ez Du Balio-Singles 1997-2007","duration":93.309388,"instrumental":false,"plainLyrics":"Eta lo bagaude, zertarako amestu?\nTa zertan esnatu hemen ez bazaude?\nEta lo bagaude, zertarako amets egin\netorriko diren egun libreekin?\n\nZertan amets egin?","syncedLyrics":"[00:29.76] Eta lo bagaude, zertarako amestu?\n[00:33.36] Ta zertan esnatu hemen ez bazaude?\n[00:40.69] Eta lo bagaude, zertarako amets egin\n[00:47.82] etorriko diren egun libreekin?\n[00:57.78] Zertan amets egin?\n[01:28.48] ","lyricsfile":"version: '1.0'\nmetadata:\n  title: Zertarako Amestu\n  artist: Berri Txarrak\n  album: Denak Ez Du Balio-Singles 1997-2007\n  duration_ms: 93309\n  instrumental: false\nlines:\n- text: Eta lo bagaude, zertarako amestu?\n  start_ms: 29760\n  end_ms: 33360\n- text: Ta zertan esnatu hemen ez bazaude?\n  start_ms: 33360\n  end_ms: 40690\n- text: Eta lo bagaude, zertarako amets egin\n  start_ms: 40690\n  end_ms: 47820\n- text: etorriko diren egun libreekin?\n  start_ms: 47820\n  end_ms: 57780\n- text: Zertan amets egin?\n  start_ms: 57780\n  end_ms: 88480\n- text: ''\n  start_ms: 88480\nplain: |-\n  Eta lo bagaude, zertarako amestu?\n  Ta zertan esnatu hemen ez bazaude?\n  Eta lo bagaude, zertarako amets egin\n  etorriko diren egun libreekin?\n\n  Zertan amets egin?\n"}
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - cloudflare
+    status:
+      code: 200
+      message: OK
+version: 1

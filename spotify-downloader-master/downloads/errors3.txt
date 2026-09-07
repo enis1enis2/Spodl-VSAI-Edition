@@ -1,0 +1,5 @@
+2026-09-07-12-25-29
+https://open.spotify.com/track/53Zk8gw9Tvk4RFjraCToTX - DownloaderError: Could not remove temp file: C:\Users\Enis Polat\.spotdl\temp\RqEhguGFvFU.webm, possible duplicate song
+https://open.spotify.com/track/3Hde8QTMqLkIZ98JR4Jj6Z - LookupError: No results found for song: Anıl Piyancı - Açık Ara Bul Kon
+https://open.spotify.com/track/4aZXSzUKmrtwOzNFNP8dGI - AudioProviderError: YT-DLP download error - https://www.youtube.com/watch?v=HuY6ZNXfziE
+Error occurred while reinitializing song: Could not get client token
