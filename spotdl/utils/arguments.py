@@ -893,6 +893,8 @@ def parse_arguments() -> Namespace:
     """
 
     if len(sys.argv) > 1 and sys.argv[1] == "remote":
+        from spotdl.console.remote import remote
+
         remote_parser = ArgumentParser(
             prog="spotdl remote",
             description="Run remote client or server for distributed downloads",
@@ -919,6 +921,7 @@ def parse_arguments() -> Namespace:
             "--remote-download-dir",
             help="Directory to save downloaded files (client mode only)",
         )
+        remote_parser.set_defaults(func=remote)
         return remote_parser.parse_args(sys.argv[2:])
 
     # Create parser
