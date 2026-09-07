@@ -33,7 +33,7 @@ When installing [Python](https://python.org/), ensure to select "**Add to PATH**
 
 First, open a terminal. On Windows: Command Prompt, macOS: "Terminal", *UNIX: Bash or Zsh.
 
-Verify you have installed Python correctly via `python -V`. Ensure you have v3.7 or greater.
+Verify you have installed Python correctly via `python -V`. Ensure you have v3.10 or greater.
 
 Next, install spotDL by typing the following:
 
@@ -70,6 +70,11 @@ spotdl --download-deno
 
 If you want to install Deno system-wide instead, follow the
 [official Deno installation guide](https://docs.deno.com/runtime/getting_started/installation/).
+
+### Acoustic Fingerprinting
+
+spotDL can optionally use `pyacoustid` for acoustic fingerprinting-based duplicate detection in universal search.
+This package is installed automatically with spotDL and requires no additional setup.
 
 ## Using Prebuilt Executable
 

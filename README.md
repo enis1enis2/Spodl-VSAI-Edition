@@ -151,6 +151,19 @@ For a list of all **options** use ```spotdl -h```
 
 - `meta`: Updates metadata for the provided song files.
 
+- `universal`: Search across all supported platforms (YouTube, YouTube Music, SoundCloud, Bandcamp, Deezer, Apple Music, etc.) and download the best match with duplicate protection.
+
+    - Usage:
+        `spotdl universal [query]`
+
+- `remote`: Run a remote client or server for distributed downloads.
+
+    - Server usage:
+        `spotdl remote server --remote-host 0.0.0.0 --remote-port 8801`
+
+    - Client usage:
+        `spotdl remote client --remote-server http://localhost:8801 --remote-download-dir ./downloads`
+
 </details>
 
 ## Music Sourcing and Audio Quality

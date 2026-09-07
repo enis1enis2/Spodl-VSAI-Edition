@@ -60,8 +60,6 @@ Refer to our [Installation Guide](installation.md) for more details.
 
       ```bash
       # Set your user ID and group ID (recommended)
-      # This ensures downloaded files are owned by your user instead of root
-      # If you don't set this, files will be owned by user 1000
       export PUID=$(id -u)
       export PGID=$(id -g)
 
@@ -78,6 +76,8 @@ Refer to our [Installation Guide](installation.md) for more details.
       mkdir -p downloads
       docker compose cp spotdl:/music/. ./downloads/
       ```
+
+      The default `docker-compose.yml` is minimal and uses a named volume. Adjust `PUID`/`PGID` if you need different ownership.
 
 - Build from source
 

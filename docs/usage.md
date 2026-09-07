@@ -117,6 +117,69 @@ example:
 spotdl download 'The Weeknd - Blinding Lights' https://open.spotify.com/playlist/37i9dQZF1E8UXBoz02kGID ...
 ```
 
+## Universal Search
+
+Search and download from all supported audio sources with duplicate protection.
+
+spotDL's universal search leverages **yt-dlp's extractor ecosystem**, which supports over 1,000 audio/video sites including YouTube, YouTube Music, SoundCloud, Bandcamp, Deezer, Apple Music, and many more. The `UniversalProvider` falls back to yt-dlp's generic extraction when other providers fail, ensuring maximum coverage.
+
+??? info "Universal search"
+    To search for a song across all supported platforms (YouTube, YouTube Music, SoundCloud, Bandcamp, Deezer, Apple Music, etc.):
+
+    ```bash
+    spotdl universal "The Weeknd - Blinding Lights"
+    ```
+
+??? info "Universal search with auto-download"
+    To automatically download the best match without prompting:
+
+    ```bash
+    spotdl universal "The Weeknd - Blinding Lights" --universal-auto-download
+    ```
+
+??? info "Universal search with duplicate protection"
+    To enable duplicate detection across sources:
+
+    ```bash
+    spotdl universal "The Weeknd - Blinding Lights" --universal-dedup
+    ```
+
+??? info "Universal search with acoustic fingerprinting"
+    To use acoustic fingerprinting for more accurate duplicate detection:
+
+    ```bash
+    spotdl universal "The Weeknd - Blinding Lights" --universal-acoustic-fingerprint
+    ```
+
+## Remote Downloads
+
+Distribute downloads across multiple machines using the client/server system.
+
+??? info "Start remote server"
+    To start the remote download server:
+
+    ```bash
+    spotdl remote server --remote-host 0.0.0.0 --remote-port 8801
+    ```
+
+    Then open `http://localhost:8801/dashboard` to view the dashboard.
+
+??? info "Connect remote client"
+    To connect a client to the server and process download orders:
+
+    ```bash
+    spotdl remote client --remote-server http://localhost:8801 --remote-download-dir ./downloads
+    ```
+
+    > Note: Clients can only download requested tracks/playlists/songs and cannot order new ones.
+
+??? info "Create download order via API"
+    To create a download order using the REST API:
+
+    ```bash
+    curl -X POST "http://localhost:8801/api/orders?query=The%20Weeknd%20-%20Blinding%20Lights&priority=5"
+    ```
+
 ## Audio Formats and Quality
 
 Files are downloaded in MP3 format for the best compatibility across different platforms/players, but spotDL also supports other output formats like M4A and OPUS.
@@ -268,8 +331,8 @@ If you don't want the config to load automatically, change the `load_config` opt
 
 ```json
 {
-    "client_id": "f8a606e5583643beaa27ce62c48e3fc1",
-    "client_secret": "f6f4c8f73f0649939286cf417c811607",
+    "client_id": "5f573c9620494bae87890c0f08a60293",
+    "client_secret": "212476d9b0f3472eaa762d90b19b0ba8",
     "auth_token": null,
     "user_auth": false,
     "headless": false,
@@ -282,6 +345,7 @@ If you don't want the config to load automatically, change the `load_config` opt
         "youtube-music"
     ],
     "lyrics_providers": [
+        "lrclib",
         "genius",
         "azlyrics",
         "musixmatch"
@@ -329,6 +393,12 @@ If you don't want the config to load automatically, change the `load_config` opt
     "skip_album_art": false,
     "create_skip_file": false,
     "respect_skip_file": false,
+    "sync_remove_lrc": false,
+    "universal_search": false,
+    "universal_dedup": true,
+    "universal_auto_download": false,
+    "universal_max_workers": 5,
+    "universal_acoustic_fingerprint": false,
     "web_use_output_dir": false,
     "port": 8800,
     "host": "localhost",
@@ -401,9 +471,9 @@ Main options:
                         You can only use album/playlist/tracks urls when downloading/matching youtube urls.
                         When using youtube url without spotify url, you won't be able to use `--fetch-albums` option.
 
-  --audio [{youtube,youtube-music,slider-kz,soundcloud,bandcamp,piped} ...]
+  --audio [{youtube,youtube-music,soundcloud,bandcamp,piped} ...]
                         The audio provider to use. You can provide more than one for fallback.
-  --lyrics [{genius,musixmatch,azlyrics,synced} ...]
+  --lyrics [{lrclib,genius,musixmatch,azlyrics,synced} ...]
                         The lyrics provider to use. You can provide more than one for fallback. Synced lyrics might not work correctly with some music players. For such cases it's better
                         to use `--generate-lrc` option.
   --genius-access-token GENIUS_TOKEN
@@ -500,6 +570,18 @@ Output options:
   --create-skip-file    Create skip file for successfully downloaded file
   --respect-skip-file   If a file with the extension .skip exists, skip download
   --sync-remove-lrc     Remove lrc files when using sync operation when downloading songs
+
+Universal options:
+  --universal-search
+                        Search across all supported platforms (YouTube, SoundCloud, etc.)
+  --universal-dedup
+                        Enable duplicate detection across sources
+  --universal-auto-download
+                        Automatically download the best match
+  --universal-max-workers UNIVERSAL_MAX_WORKERS
+                        Maximum parallel workers for universal search
+  --universal-acoustic-fingerprint
+                        Use acoustic fingerprinting for duplicate detection
 
 Web options:
   --host HOST           The host to use for the web server.
