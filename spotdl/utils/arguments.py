@@ -919,7 +919,7 @@ def parse_arguments() -> Namespace:
             "--remote-download-dir",
             help="Directory to save downloaded files (client mode only)",
         )
-        return remote_parser.parse_args()
+        return remote_parser.parse_args(sys.argv[2:])
 
     # Create parser
     parser = create_parser()
